@@ -5,7 +5,7 @@ import {userContext} from "./context";
 
 import './style.css';
 
-import {Lesson1, Lesson2, Color} from './components';
+import {Lesson1, Lesson2, Color, Home} from './components';
 
 export default function App(){
 
@@ -15,8 +15,10 @@ export default function App(){
   return(
     <Router>
 
-        <div className= "nav">
+        <div className= "nav" >
 
+          <div className= "nav"><Link 
+          to="/home">Home</Link></div>
           <div className= "nav"><Link 
           to="/color">Set Color</Link></div>
           <div className= "nav"><Link to="/lesson1">Lesson1</Link></div>
@@ -24,12 +26,14 @@ export default function App(){
           
         </div>
         
-        <br/>
-        <br/>
+        
         
         <userContext.Provider value={{value, setValue}}>
         <Switch>
             
+            <Route path="/home">
+              <Home/>
+            </Route>
             <Route path="/color">
               <Color/>
             </Route>
