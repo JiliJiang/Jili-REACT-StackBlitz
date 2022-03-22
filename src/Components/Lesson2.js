@@ -24,7 +24,7 @@ export default function Lesson2() {
   return (
     <div style={{color: value}}>
     <h2 style={{color: value}}>Lesson2</h2>
-    <h4 style={{color: value}} >Using REACT UI Material library's autocomplete component</h4>
+    <h4 style={{color: value}} >Using REACT Material-UI library's autocomplete component</h4>
     
     <Autocomplete className="input"
       disablePortal 
