@@ -32,7 +32,8 @@ export default function Lesson2() {
       options={names}
       sx={{ width: 400 }}
       renderInput={(params) => <TextField {...params} label="name" />}
-      onChange = {e => setName(e.currentTarget.innerHTML)} 
+      onInputChange = {e => setName(e.currentTarget.innerHTML)} 
+      disableClearable="true"
     />
      
 
