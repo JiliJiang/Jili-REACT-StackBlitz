@@ -27,8 +27,8 @@ export default function Lesson2() {
     <h4 style={{color: value}} >Using REACT UI Material library's autocomplete component</h4>
     
     <Autocomplete className="input"
-      disablePortal
-      id="combo-box-demo"
+      disablePortal 
+      id="combo-box-demo" 
       options={names}
       sx={{ width: 400 }}
       renderInput={(params) => <TextField {...params} label="name" />}
