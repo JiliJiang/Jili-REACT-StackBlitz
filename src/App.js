@@ -30,6 +30,17 @@ export default function App(){
         
         <userContext.Provider value={{value, setValue}}>
         <Switch>
+
+              <Route
+                exact
+                path="/"
+                render={() => {
+                    return (
+                      
+                      <Redirect to="/home" /> )
+                      
+                }}
+              />
             
             <Route path="/home">
               <Home/>
