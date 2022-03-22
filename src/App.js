@@ -31,9 +31,7 @@ export default function App(){
         <userContext.Provider value={{value, setValue}}>
         <Switch>
 
-            <Route path="/">
-              <Home/>
-            </Route>
+                        
             <Route path="/home">
               <Home/>
             </Route>
