@@ -23,20 +23,21 @@ export default function Lesson2() {
 
   return (
     <div style={{color: value}}>
-    <h2>Lesson2</h2>
-    <h4>Using REACT UI Material library's autocomplete component</h4>
-
+    <h2 style={{color: value}}>Lesson2</h2>
+    <h4 style={{color: value}} >Using REACT UI Material library's autocomplete component</h4>
+    
     <Autocomplete className="input"
       disablePortal
       id="combo-box-demo"
       options={names}
-      sx={{ width: 300 }}
-      renderInput={(params) => <TextField {...params} label="Name" />}
-      onChange = {e=> setName(e.currentTarget.innerHTML)}
+      sx={{ width: 400 }}
+      renderInput={(params) => <TextField {...params} label="name" />}
+      onChange = {e => setName(e.currentTarget.innerHTML)} 
     />
+     
 
-    <h4>Hello, my name is</h4>
-    <h2>{name}</h2>
+    <h4 style={{color: value}}>Hello, my name is</h4>
+    <h2 style={{color: value}}>{name}</h2>
 
     </div>
   )
